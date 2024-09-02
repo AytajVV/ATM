@@ -5,6 +5,8 @@
  */
 package atm;
 
+import java.util.Scanner;
+
 /**
  *
  * @author aytaj.veyisli
@@ -16,6 +18,15 @@ public class ATM {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Welcome! Please, enter the ID");
+         Scanner scanner = new Scanner(System.in);
+         
+         int id = scanner.nextInt();
+         
+         
+         
+         
+         
     }
     
 }
