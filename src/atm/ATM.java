@@ -5,7 +5,9 @@
  */
 package atm;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
 
 /**
  *
@@ -18,13 +20,41 @@ public class ATM {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Welcome! Please, enter the ID");
-         Scanner scanner = new Scanner(System.in);
-         
-         int id = scanner.nextInt();
+        
+        
          
          
          
+         while(true){
+             System.out.println("WELCOME!");
+             
+             System.out.println("Enter your ID:");
+             Scanner scanner = new Scanner(System.in);
+         
+             String id = scanner.nextLine();
+             
+             
+             Operations.checkID(id);
+             System.out.println(Operations.operations);
+             
+             Scanner sc2 = new Scanner(System.in);
+             String withdraw = sc2.nextLine();
+             
+             
+             Operations.WithdrawMoney();
+             
+             
+             
+             
+             
+         }
+         
+         
+          
+         
+         
+         
+          
          
          
     }
